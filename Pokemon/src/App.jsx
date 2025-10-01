@@ -57,7 +57,8 @@ function App() {
       const data = await response.json();
       setPokemon(data);
       setMostrarTodos(false); // Ocultar la cuadrícula y mostrar solo el buscado
-    } catch (err) {
+    // eslint-disable-next-line no-unused-vars
+    } catch (err  ) {
       setError('Pokémon no encontrado. Intenta con otro nombre.');
       setPokemon(null);
       setMostrarTodos(true); // Mostrar todos si hay error
